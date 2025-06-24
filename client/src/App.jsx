@@ -1,25 +1,13 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { AuthProvider } from './context/AuthContext';
-import Home from './pages/Home';
-import Login from './pages/Login';
-import PrivateRoute from './routes/PrivateRoute';
+import { useState } from 'react'
+import './App.css'
 
 function App() {
   return (
-    <AuthProvider>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/admin" element={
-            <PrivateRoute>
-              <div>Panel de administración protegido 🔒</div>
-            </PrivateRoute>
-          }/>
-        </Routes>
-      </BrowserRouter>
-    </AuthProvider>
-  );
+    <div>
+      <h1>TechStore Pro 🛒</h1>
+      <p>Tu tienda virtual de productos tecnológicos.</p>
+    </div>
+  )
 }
 
-export default App;
+export default App
