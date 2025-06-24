@@ -1,10 +1,10 @@
-import './App.css';
+import Home from './pages/Home';
 
 function App() {
   return (
     <div>
       <h1>TechStore Pro 🛒</h1>
-      <p>Tu tienda virtual de productos tecnológicos.</p>
+      <Home />
     </div>
   );
 }
